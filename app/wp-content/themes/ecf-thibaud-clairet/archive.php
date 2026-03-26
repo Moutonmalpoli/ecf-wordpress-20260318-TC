@@ -1,21 +1,4 @@
 <?php 
-/* 
-Archive.php
-
-
-Les articles sont affichés sous forme de "cards" (largeur 540px, 2 par ligne).
-
-Pour chaque article trouvé, affichez dans une balise <article> :
-
-    Le titre (doit être "cliquable").
-    L'image de mise en avant.
-    L'extrait.
-    La date de publication.
-    La catégorie (cliquable)
-
-Sous les articles, ajouter les liens de pagination
-
-*/ 
 
 get_header();
 ?>

@@ -1,17 +1,5 @@
 <?php 
-/**
- * INDEX.php
- Les articles sont affichés sous forme de "cards" (largeur 360px, 2 par lignes).
-Pour chaque article trouvé, affichez dans une balise <article> :
 
-    Le titre (doit être "cliquable").
-    L'image de mise en avant.
-    L'extrait.
-    La date de publication.
-
-Ce template servira également pour la page d'accueil (ne pas créer de home.php ou front-page.php) 
- 
- */
 get_header();
 ?>
 

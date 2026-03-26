@@ -1,11 +1,8 @@
-
-<sidebar class="left-sidebar">
-    <?php dynamic_sidebar("left-sidebar") ?>
-</sidebar>
+</div> <!-- site-container -->
 
 <footer>
-
-<?php wp_footer(); ?>
+    <p>Copyright 2026 DWWM2503 Thibaud Clairet</p>
+    <?php wp_footer(); ?>
 
 
 </footer>

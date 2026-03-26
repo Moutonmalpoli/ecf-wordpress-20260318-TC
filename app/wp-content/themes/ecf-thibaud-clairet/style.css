@@ -5,38 +5,13 @@ Author: Thibaud Clairet
 
 */
 
-/*penser a renommer les variables*/
-
-
-/*
-
-
-Largeur du site : 1440px, centré sur la page
-
-Texte noir, fond blanc
-
-gris clair : #EEEEEE;
-
-bleu : #1b296a
-
-orange : #ed6840
-
-Les couleurs doivent être placées dans des variables CSS
-
-La sidebar (largeur fixe ~200px) contient la liste des catégories.
-
-L'entête doit obligatoirement contenir l'image homepage.png
-
-Ajoutez un pied de page contenant le texte "Copyright (ANNEE) DWWM2503 PRENOM NOM"
-
-*/
 
 :root{
-    --color-grey: #EEEEEE;
-    --color-blue: #1b296a;
-    --color-orange: #ed6840;
-    --color-black: #000000;
-    --color-white: #ffffff;
+    --color-border: #EEEEEE; 
+    --color-heading: #1b296a;
+    --color-accent: #ed6840;
+    --color-text: #000000;
+    --color-background: #ffffff;
 }
 
 *{
@@ -50,23 +25,66 @@ Ajoutez un pied de page contenant le texte "Copyright (ANNEE) DWWM2503 PRENOM NO
     padding: 20px;
     justify-content: flex-end;
     list-style: none;
+
+}
+#top-menu a {
+    color: var(--color-text);
+    text-decoration: none;
+
 }
 
-/* image homepage */
-.homepage-img {
-    
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    display: block;
+
+
+/* Homepage section */
+.homepage-head-card {
+    position: relative;
     max-width: 1440px;
     margin: 0 auto;
+    height: 500px;
+    overflow: hidden;
+}
+
+.homepage-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.homepage-content {
+    position: absolute;
+    left: 60px;
+    color: var(--color-background);
+    max-width: 600px;
+}
+
+.homepage-badge {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    padding: 6px 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.homepage-content h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 15px 0;
+    color: var(--color-background);
+}
+
+.homepage-content p {
+    font-size: 18px;
+    color: var(--color-background);
+    margin: 15px 0;
+    line-height: 1.5;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: var(--color-white);
-    color: var(--color-black);
+    background-color: var(--color-background);
+    color: var(--color-text);
     margin: 0;
     padding: 0;
 }
@@ -89,7 +107,7 @@ body{
 }
 
 .left-sidebar h3 {
-    color: var(--color-black);
+    color: var(--color-text);
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 30px;
@@ -106,7 +124,7 @@ body{
 }
 
 .left-sidebar a {
-    color: var(--color-black);
+    color: var(--color-text);
     text-decoration: none;
     display: block;
 }
@@ -123,43 +141,43 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: flex-start;
+    max-width: 760px;
 }
 
 /* Card articles */
 .article-card {
-    width: 540px;
-    background-color: var(--color-white);
-    border: 1px solid var(--color-grey);
+    width: 360px;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
     border-radius: 8px;
     padding: 20px;
 }
 
 .article-card h2 {
     margin-top: 0;
-    color: var(--color-blue);
+    color: var(--color-heading);
 }
 
 .article-card h2 a {
-    color: var(--color-blue);
+    color: var(--color-heading);
     text-decoration: none;
 }
 
 .article-card-archive {
     width: 540px;
-    background-color: var(--color-white);
-    border: 1px solid var(--color-grey);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
     border-radius: 8px;
     padding: 20px;
 }
 
 .article-card-archive h2 {
     margin-top: 0;
-    color: var(--color-blue);
+    color: var(--color-heading);
 }
 
 .article-card-archive h2 a {
-    color: var(--color-blue);
+    color: var(--color-heading);
     text-decoration: none;
 }
 
