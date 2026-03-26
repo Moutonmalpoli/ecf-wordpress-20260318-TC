@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>"> 
 </head>
 <body>
+    <?php wp_nav_menu ([
+        "Theme location" => "top-menu"
+    ]) ?>
+
     
 </body>
 </html>
